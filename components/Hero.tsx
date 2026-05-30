@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative h-[600px]">
       <Image
-        src="/images/farm-hero.jpg"
+        src="/farm-banner.jpg"
         alt="Farm"
         fill
         priority
