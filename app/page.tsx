@@ -1,21 +1,18 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import Products from "@/components/Products";
-import About from "@/components/Aboutus";
-import Process from "@/components/Farmingprocess";
-import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
-
+import Products from "@/components/Products";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      <Navbar/>
       <Hero />
       <Features />
-      <Products />
-      <About />
-      <Process />
-      <Gallery />
+      <Products/>
       <Testimonials />
+      <Footer/>
     </>
   );
 }
