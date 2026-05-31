@@ -2,22 +2,22 @@ export const productCategories = [
   {
     title: "Vegetables",
     description: "Fresh organic vegetables harvested directly from our farm.",
-    image: "/products/vegetables.jpg",
+    image: "/farm-banner.jpg",
     href: "/products/vegetables",
     products: [
       {
         name: "Tomato",
-        image: "/vegetables/tomato.jpg",
+        image: "/farm-banner.jpg",
         description: "Fresh organic tomatoes grown naturally.",
       },
       {
         name: "Carrot",
-        image: "/vegetables/carrot.jpg",
+        image: "/farm-banner.jpg",
         description: "Farm fresh carrots rich in nutrients.",
       },
       {
         name: "Potato",
-        image: "/vegetables/potato.jpg",
+        image: "/farm-banner.jpg",
         description: "Naturally cultivated organic potatoes.",
       },
     ],
@@ -25,17 +25,17 @@ export const productCategories = [
   {
     title: "Fruits",
     description: "Naturally grown fruits packed with nutrition and flavor.",
-    image: "/products/fruits.jpg",
+    image: "/farm-banner.jpg",
     href: "/products/fruits",
     products: [
       {
         name: "Mango",
-        image: "/fruits/mango.jpg",
+        image: "/farm-banner.jpg",
         description: "Sweet organic mangoes.",
       },
       {
         name: "Banana",
-        image: "/fruits/banana.jpg",
+        image: "/farm-banner.jpg",
         description: "Fresh organic bananas.",
       },
     ],
@@ -43,12 +43,12 @@ export const productCategories = [
   {
     title: "Herbs",
     description: "Aromatic and healthy herbs cultivated without chemicals.",
-    image: "/products/herbs.jpg",
+    image: "/farm-banner.jpg",
     href: "/products/herbs",
     products: [
       {
         name: "Mint",
-        image: "/herbs/mint.jpg",
+        image: "/farm-banner.jpg",
         description: "Fresh aromatic mint leaves.",
       },
     ],
@@ -56,12 +56,12 @@ export const productCategories = [
   {
     title: "Grains",
     description: "Premium organic grains sourced directly from our fields.",
-    image: "/products/grains.jpg",
+    image: "/farm-banner.jpg",
     href: "/products/grains",
     products: [
       {
         name: "Rice",
-        image: "/grains/rice.jpg",
+        image: "/farm-banner.jpg",
         description: "Premium organic rice.",
       },
     ],

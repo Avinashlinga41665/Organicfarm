@@ -16,6 +16,8 @@ export default function Navbar() {
     { href: "/farming-process", label: "Process" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
+    { href: "/farm-tours", label: "Visit Us" },
+
   ];
 
   return (
@@ -30,16 +32,16 @@ export default function Navbar() {
               href="mailto:hello@greenfarm.com"
               className="flex items-center gap-2 hover:text-green-200"
             >
-              <Mail size={14} />
-              hello@greenfarm.com
+              <Mail size={20} />
+              
             </a>
 
             <a
               href="tel:+919876543210"
               className="flex items-center gap-2 hover:text-green-200"
             >
-              <Phone size={14} />
-              +91 98765 43210
+              <Phone size={20} />
+              
             </a>
           </div>
         </div>
@@ -103,7 +105,7 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-[100] bg-black/50"
+          className="fixed inset-0 z-100 bg-black/50"
           onClick={() => setMenuOpen(false)}
         >
           <div
@@ -148,18 +150,18 @@ export default function Navbar() {
               <div className="space-y-4 text-gray-700">
                 <a
                   href="tel:+919876543210"
-                  className="flex items-center gap-3"
+                  className="flex items-center justify-center gap-3"
                 >
-                  <Phone size={18} />
-                  +91 98765 43210
+                  <Phone size={20} />
+                 
                 </a>
 
                 <a
                   href="mailto:hello@greenfarm.com"
-                  className="flex items-center gap-3"
+                  className="flex items-center justify-center gap-3"
                 >
-                  <Mail size={18} />
-                  hello@greenfarm.com
+                  <Mail size={20} />
+                  
                 </a>
               </div>
             </div>

@@ -59,7 +59,7 @@ export default function Hero() {
         {/* Card 1 */}
         <div className="relative h-80 rounded-2xl overflow-hidden group">
           <Image
-            src="/banner1.jpg"
+            src="/farm-banner.jpg"
             alt="Organic Farming"
             fill
             className="object-cover group-hover:scale-105 transition duration-500"
@@ -81,7 +81,7 @@ export default function Hero() {
         {/* Card 2 */}
         <div className="relative h-80 rounded-2xl overflow-hidden group">
           <Image
-            src="/banner2.jpg"
+            src="/farm-banner.jpg"
             alt="Fresh Harvest"
             fill
             className="object-cover group-hover:scale-105 transition duration-500"
@@ -103,7 +103,7 @@ export default function Hero() {
         {/* Card 3 */}
         <div className="relative h-80 rounded-2xl overflow-hidden group">
           <Image
-            src="/banner3.jpg"
+            src="/farm-banner.jpg"
             alt="Chemical Free"
             fill
             className="object-cover group-hover:scale-105 transition duration-500"
@@ -180,7 +180,7 @@ export default function Hero() {
             {/* Banner 1 */}
             <div className="relative h-36 rounded-xl overflow-hidden">
               <Image
-                src="/banner1.jpg"
+                src="/farm-banner.jpg"
                 alt="Organic Farming"
                 fill
                 className="object-cover"
@@ -202,7 +202,7 @@ export default function Hero() {
             {/* Banner 2 */}
             <div className="relative h-36 rounded-xl overflow-hidden">
               <Image
-                src="/banner2.jpg"
+                src="/farm-banner.jpg"
                 alt="Fresh Harvest"
                 fill
                 className="object-cover"
@@ -224,7 +224,7 @@ export default function Hero() {
             {/* Banner 3 Full Width */}
             <div className="relative h-36 rounded-xl overflow-hidden col-span-2">
               <Image
-                src="/banner3.jpg"
+                src="/farm-banner.jpg"
                 alt="Chemical Free"
                 fill
                 className="object-cover"

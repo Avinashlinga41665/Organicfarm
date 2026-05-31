@@ -6,7 +6,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-green-950 to-green-800 text-white">
+    <footer className="bg-linear-to-r from-green-950 to-green-800 text-white">
       <div className="max-w-7xl mx-auto px-6 py-14">
 
         {/* Main Footer */}
@@ -99,7 +99,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Phone
                   size={18}
-                  className="mt-1 flex-shrink-0"
+                  className="mt-1 shrink-0"
                 />
                 <span>+91 98765 43210</span>
               </div>
@@ -107,7 +107,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin
                   size={18}
-                  className="mt-1 flex-shrink-0"
+                  className="mt-1 shrink-0"
                 />
                 <span>
                   Hyderabad, Telangana, India
@@ -119,23 +119,24 @@ export default function Footer() {
 
           {/* WhatsApp CTA */}
           <div>
-            <h3 className="text-xl font-bold mb-4">
-              Fresh From Our Farm
-            </h3>
+           <h3 className="text-xl font-bold mb-4">
+  Visit Our Farm
+</h3>
 
-            <p className="text-gray-300 mb-5">
-              Contact us directly for product availability,
-              bulk orders, and farm visits.
-            </p>
+<p className="text-gray-300 mb-5">
+  Looking for fresh produce, bulk orders,
+  school tours, family visits, or farm experiences?
+  We'd love to hear from you.
+</p>
 
-            <a
-              href="https://wa.me/919876543210"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-600 hover:bg-green-700 transition px-5 py-3 rounded-lg font-semibold"
-            >
-              WhatsApp Us
-            </a>
+<a
+  href="https://wa.me/919876543210"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-green-600 hover:bg-green-700 transition px-5 py-3 rounded-lg font-semibold"
+>
+  Contact Us
+</a>
           </div>
 
         </div>

@@ -5,7 +5,7 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="py-20 bg-gradient-to-b from-green-50 to-white"
+      className="py-20 bg-linear-to-b from-green-50 to-white"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
