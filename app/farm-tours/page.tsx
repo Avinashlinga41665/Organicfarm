@@ -4,8 +4,15 @@ import {
   Trees,
   Phone,
 } from "lucide-react";
+import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Farm Tours",
+  description:
+    "Experience our organic farm firsthand through guided tours and activities.",
+};
 export default function FarmTours() {
   return (
     <>

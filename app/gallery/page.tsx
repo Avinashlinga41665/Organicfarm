@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -41,6 +42,11 @@ const showcases = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Gallery",
+  description:
+    "Explore our farm through photos showcasing fresh produce and farming activities.",
+};
 export default function Gallery() {
   return (
     <>

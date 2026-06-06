@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Leaf, Sprout, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about our farming journey, sustainable practices and commitment to organic produce.",
+};
 
 export default function AboutUs() {
   return (

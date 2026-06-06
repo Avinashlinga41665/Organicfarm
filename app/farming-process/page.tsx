@@ -5,8 +5,14 @@ import {
   ShieldCheck,
   Truck,
 } from "lucide-react";
+import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+export const metadata: Metadata = {
+  title: "Farm Process",
+  description:
+    "Experience our organic farm firsthand through guided tours and activities.",
+};
 
 const processSteps = [
   {

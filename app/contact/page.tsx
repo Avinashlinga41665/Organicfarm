@@ -1,12 +1,18 @@
 import {
   Phone,
-  Mail,
   MapPin,
   Clock,
 } from "lucide-react";
+import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Organic Farm for enquiries, visits and bulk orders.",
+};
 export default function ContactPage() {
   return (
     <>
