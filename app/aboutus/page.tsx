@@ -12,12 +12,7 @@ export default function AboutUs() {
 
       {/* Hero Section */}
       <section className="bg-linear-to-r from-green-900 to-green-700 text-white py-12 md:py-20">
-        <Image
-    src="/images/farm-banner.jpg"
-    alt="Farm"
-    fill
-    className="object-cover"
-  />
+  
         <div className="max-w-7xl mx-auto px-6">
 
           <span className="inline-block bg-green-500 px-5 py-2 rounded-full text-sm font-medium">
@@ -46,7 +41,7 @@ export default function AboutUs() {
 
               <div className="relative min-h-75 md:min-h-125">
                 <Image
-                  src="/images/family-farm.jpg"
+                  src="/aboutus1.jpg"
                   alt="Farm Family"
                   fill
                   className="object-cover"

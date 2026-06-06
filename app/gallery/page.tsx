@@ -7,37 +7,37 @@ const showcases = [
     title: "Organic Farming",
     description:
       "We cultivate our crops using sustainable farming methods without harmful chemicals, ensuring healthier produce and a healthier environment.",
-    image: "/images/gallery1.jpg",
+    image: "/gallery1.jpg",
   },
   {
     title: "Fresh Vegetable Harvest",
     description:
       "Every morning our vegetables are carefully harvested to preserve freshness, flavor, and nutritional value.",
-    image: "/images/gallery2.jpg",
+    image: "/gallery2.jpg",
   },
   {
     title: "Seasonal Fruits",
     description:
       "Our fruit orchards produce naturally ripened fruits grown with patience and care throughout every season.",
-    image: "/images/gallery3.jpg",
+    image: "/gallery3.jpg",
   },
   {
     title: "Farmers At Work",
     description:
       "Behind every harvest is a dedicated team working hard to maintain the highest standards of quality and sustainability.",
-    image: "/images/gallery4.jpg",
+    image: "/gallery4.jpg",
   },
   {
     title: "Healthy Crop Fields",
     description:
       "Our fertile fields are carefully maintained using natural fertilizers and responsible farming techniques.",
-    image: "/images/gallery5.jpg",
+    image: "/gallery5.jpg",
   },
   {
     title: "Farm To Table",
     description:
       "From planting seeds to delivering fresh produce, every step is handled with care and commitment.",
-    image: "/images/gallery6.jpg",
+    image: "/gallery6.jpg",
   },
 ];
 

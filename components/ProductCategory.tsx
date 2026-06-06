@@ -1,13 +1,17 @@
+"use client";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 interface Product {
   name: string;
   image: string;
   description: string;
+  details?: string;
+  highlights?: string[];
 }
 
 interface ProductCategoryProps {
@@ -20,10 +24,57 @@ export default function ProductCategory({
   title,
   subtitle,
   products,
-}: ProductCategoryProps) {
+  
+}: ProductCategoryProps){
+  const [selectedProduct, setSelectedProduct] =
+  useState<Product | null>(null);
   return (
     <>
       <Navbar />
+      {selectedProduct && (
+  <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4">
+    <div className="bg-white rounded-2xl max-w-2xl w-full overflow-hidden shadow-2xl">
+
+      <div className="relative h-64">
+        <Image
+          src={selectedProduct.image}
+          alt={selectedProduct.name}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="p-6">
+        <h2 className="text-3xl font-bold text-green-800 mb-4">
+          {selectedProduct.name}
+        </h2>
+
+        <p className="text-gray-600 leading-relaxed mb-6">
+          {selectedProduct.details}
+        </p>
+
+        <div className="space-y-3">
+          {selectedProduct.highlights?.map((item) => (
+            <div
+              key={item}
+              className="flex items-center gap-2 text-gray-700"
+            >
+              <span className="text-green-600">✓</span>
+              {item}
+            </div>
+          ))}
+        </div>
+
+        <button
+          onClick={() => setSelectedProduct(null)}
+          className="mt-6 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-lg transition"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+)}
 
       <main className="bg-green-50 min-h-screen">
         {/* Hero Banner */}
@@ -130,8 +181,8 @@ export default function ProductCategory({
                     {product.description}
                   </p>
 
-                  <button className="mt-4 text-green-700 font-semibold hover:text-green-900 transition">
-                    Learn More →
+                  <button onClick={() => setSelectedProduct(product)} className="mt-4 text-green-700 font-semibold hover:text-green-900 transition">
+                   View Details →
                   </button>
                 </div>
               </div>
