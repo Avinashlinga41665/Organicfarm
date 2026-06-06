@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const slides = [
   {
@@ -11,13 +12,13 @@ const slides = [
     button: "Shop Now",
   },
   {
-    image: "/banner2.jpg",
+    image: "/organic-banner.jpg",
     title: "Fresh Harvest Daily",
     subtitle: "Picked Fresh Every Morning",
     button: "Explore",
   },
   {
-    image: "/banner3.jpg",
+    image: "/fresh-banner.jpg",
     title: "100% Chemical Free",
     subtitle: "Healthy Food For Your Family",
     button: "Learn More",
@@ -25,12 +26,13 @@ const slides = [
 ];
 
 export default function MobileHeroSlider() {
-  const [emblaRef] = useEmblaCarousel({
-    loop: true,
-  });
+  const [emblaRef] = useEmblaCarousel(
+    { loop: true },
+    [Autoplay({ delay: 4000 })]
+  );
 
   return (
-    <div className="md:hidden px-4 pt-4">
+    <div className="md:hidden">
       <div
         className="overflow-hidden rounded-2xl"
         ref={emblaRef}
@@ -45,6 +47,7 @@ export default function MobileHeroSlider() {
                 src={slide.image}
                 alt={slide.title}
                 fill
+                priority={index === 0}
                 className="object-cover"
               />
 

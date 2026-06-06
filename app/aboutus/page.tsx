@@ -11,7 +11,7 @@ export default function AboutUs() {
     <main className="bg-gray-50">
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-900 to-green-700 text-white py-12 md:py-20">
+      <section className="bg-linear-to-r from-green-900 to-green-700 text-white py-12 md:py-20">
         <Image
     src="/images/farm-banner.jpg"
     alt="Farm"
@@ -44,7 +44,7 @@ export default function AboutUs() {
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <div className="grid lg:grid-cols-2">
 
-              <div className="relative min-h-[300px] md:min-h-[500px]">
+              <div className="relative min-h-75 md:min-h-125">
                 <Image
                   src="/images/family-farm.jpg"
                   alt="Farm Family"

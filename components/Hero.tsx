@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Search } from "lucide-react";
+import MobileHeroSlider from "./HeroMobileSlider";
 
 export default function Hero() {
   return (
@@ -59,7 +60,7 @@ export default function Hero() {
         {/* Card 1 */}
         <div className="relative h-80 rounded-2xl overflow-hidden group">
           <Image
-            src="/farm-banner.jpg"
+            src="/organic-banner.jpg"
             alt="Organic Farming"
             fill
             className="object-cover group-hover:scale-105 transition duration-500"
@@ -81,7 +82,7 @@ export default function Hero() {
         {/* Card 2 */}
         <div className="relative h-80 rounded-2xl overflow-hidden group">
           <Image
-            src="/farm-banner.jpg"
+            src="/fresh-banner.jpg"
             alt="Fresh Harvest"
             fill
             className="object-cover group-hover:scale-105 transition duration-500"
@@ -103,7 +104,7 @@ export default function Hero() {
         {/* Card 3 */}
         <div className="relative h-80 rounded-2xl overflow-hidden group">
           <Image
-            src="/farm-banner.jpg"
+            src="/chemical-banner.jpg"
             alt="Chemical Free"
             fill
             className="object-cover group-hover:scale-105 transition duration-500"
@@ -145,8 +146,11 @@ export default function Hero() {
 
         {/* Main Banner */}
         <div className="p-4">
-          <div className="relative h-[220px] rounded-2xl overflow-hidden">
-            <Image
+          <div className="relative h-55 rounded-2xl overflow-hidden">
+           <MobileHeroSlider/>
+
+            {/*  static Main Banner removed */}
+            {/* <Image
               src="/farm-banner.jpg"
               alt="Fresh Organic Produce"
               fill
@@ -169,7 +173,7 @@ export default function Hero() {
               <button className="mt-4 bg-green-600 text-white px-5 py-2 rounded-lg w-fit">
                 Shop Now
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -180,7 +184,7 @@ export default function Hero() {
             {/* Banner 1 */}
             <div className="relative h-36 rounded-xl overflow-hidden">
               <Image
-                src="/farm-banner.jpg"
+                src="/organic-banner.jpg"
                 alt="Organic Farming"
                 fill
                 className="object-cover"
@@ -202,7 +206,7 @@ export default function Hero() {
             {/* Banner 2 */}
             <div className="relative h-36 rounded-xl overflow-hidden">
               <Image
-                src="/farm-banner.jpg"
+                src="/fresh-banner.jpg"
                 alt="Fresh Harvest"
                 fill
                 className="object-cover"
@@ -224,7 +228,7 @@ export default function Hero() {
             {/* Banner 3 Full Width */}
             <div className="relative h-36 rounded-xl overflow-hidden col-span-2">
               <Image
-                src="/farm-banner.jpg"
+                src="/chemical-banner.jpg"
                 alt="Chemical Free"
                 fill
                 className="object-cover"

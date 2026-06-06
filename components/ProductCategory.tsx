@@ -27,7 +27,7 @@ export default function ProductCategory({
 
       <main className="bg-green-50 min-h-screen">
         {/* Hero Banner */}
-        <section className="relative h-[350px] md:h-[500px]">
+        <section className="relative h-87.5 md:h-125">
           <Image
             src="/farm-banner.jpg"
             alt={title}
@@ -37,7 +37,7 @@ export default function ProductCategory({
           />
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/60" />
+          <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/60" />
 
           {/* Content Layer */}
           <div className="absolute inset-0 z-10">
@@ -53,7 +53,7 @@ export default function ProductCategory({
             </div>
 
             {/* Hero Content */}
-            <div className="flex flex-col items-center justify-center h-[260px] md:h-[380px] text-center px-6">
+            <div className="flex flex-col items-center justify-center h-65 md:h-95 text-center px-6">
               <span className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-white mb-4">
                 🌿 Organic Collection
               </span>

@@ -2,22 +2,22 @@ export const productCategories = [
   {
     title: "Vegetables",
     description: "Fresh organic vegetables harvested directly from our farm.",
-    image: "/farm-banner.jpg",
+    image: "/vegetable-banner.jpg",
     href: "/products/vegetables",
     products: [
       {
-        name: "Tomato",
-        image: "/farm-banner.jpg",
+        name: "Bitter Gourd",
+        image: "/Vegetable1.jpg",
         description: "Fresh organic tomatoes grown naturally.",
       },
       {
-        name: "Carrot",
-        image: "/farm-banner.jpg",
+        name: "bottle gourd",
+        image: "/Vegetable2.jpg",
         description: "Farm fresh carrots rich in nutrients.",
       },
       {
-        name: "Potato",
-        image: "/farm-banner.jpg",
+        name: "Capsicum",
+        image: "/Vegetable3.jpg",
         description: "Naturally cultivated organic potatoes.",
       },
     ],
@@ -25,17 +25,17 @@ export const productCategories = [
   {
     title: "Fruits",
     description: "Naturally grown fruits packed with nutrition and flavor.",
-    image: "/farm-banner.jpg",
+    image: "/fruit-banner.jpg",
     href: "/products/fruits",
     products: [
       {
-        name: "Mango",
-        image: "/farm-banner.jpg",
+        name: "Oranges",
+        image: "/Fruits1.jpg",
         description: "Sweet organic mangoes.",
       },
       {
-        name: "Banana",
-        image: "/farm-banner.jpg",
+        name: "Mango",
+        image: "/Fruits2.jpg",
         description: "Fresh organic bananas.",
       },
     ],
@@ -43,12 +43,12 @@ export const productCategories = [
   {
     title: "Herbs",
     description: "Aromatic and healthy herbs cultivated without chemicals.",
-    image: "/farm-banner.jpg",
+    image: "/herb-banner.jpg",
     href: "/products/herbs",
     products: [
       {
         name: "Mint",
-        image: "/farm-banner.jpg",
+        image: "/Herbs1.jpg",
         description: "Fresh aromatic mint leaves.",
       },
     ],
@@ -56,12 +56,12 @@ export const productCategories = [
   {
     title: "Grains",
     description: "Premium organic grains sourced directly from our fields.",
-    image: "/farm-banner.jpg",
+    image: "/grain-banner.jpg",
     href: "/products/grains",
     products: [
       {
         name: "Rice",
-        image: "/farm-banner.jpg",
+        image: "/Grains1.jpg",
         description: "Premium organic rice.",
       },
     ],
