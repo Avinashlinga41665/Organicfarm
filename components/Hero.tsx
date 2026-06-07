@@ -200,7 +200,7 @@ export default function Hero() {
                   Organic Farming
                 </h3>
 
-                <button className="text-xs bg-white text-black px-3 py-1 rounded mt-2 w-fit">
+                <button onClick={() => router.push("/aboutus")} className="text-xs bg-white text-black px-3 py-1 rounded mt-2 w-fit">
                   Explore
                 </button>
               </div>
@@ -222,8 +222,8 @@ export default function Hero() {
                   Fresh Harvest
                 </h3>
 
-                <button className="text-xs bg-white text-black px-3 py-1 rounded mt-2 w-fit">
-                  Shop
+                <button onClick={() => router.push("/products")} className="text-xs bg-white text-black px-3 py-1 rounded mt-2 w-fit">
+                  Shop Now
                 </button>
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function Hero() {
                   100% Chemical Free
                 </h3>
 
-                <button className="text-xs bg-white text-black px-3 py-1 rounded mt-2 w-fit">
+                <button onClick={() => router.push("/farming-process")} className="text-xs bg-white text-black px-3 py-1 rounded mt-2 w-fit">
                   Learn More
                 </button>
               </div>

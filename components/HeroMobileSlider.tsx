@@ -1,5 +1,5 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
@@ -10,26 +10,31 @@ const slides = [
     title: "Fresh Organic Produce",
     subtitle: "Farm to Table • Pure & Natural",
     button: "Shop Now",
+    href: "/products",
   },
   {
     image: "/organic-banner.jpg",
     title: "Fresh Harvest Daily",
     subtitle: "Picked Fresh Every Morning",
     button: "Explore",
+    href: "/aboutus",
   },
   {
     image: "/fresh-banner.jpg",
     title: "100% Chemical Free",
     subtitle: "Healthy Food For Your Family",
     button: "Learn More",
+    href: "/farming-process",
   },
 ];
 
 export default function MobileHeroSlider() {
+  
   const [emblaRef] = useEmblaCarousel(
     { loop: true },
     [Autoplay({ delay: 4000 })]
   );
+  const router = useRouter();
 
   return (
     <div className="md:hidden">
@@ -62,7 +67,7 @@ export default function MobileHeroSlider() {
                   {slide.subtitle}
                 </p>
 
-                <button className="mt-5 bg-green-600 text-white px-5 py-3 rounded-lg w-fit">
+                <button onClick={() => router.push(slide.href)} className="mt-5 bg-green-600 text-white px-5 py-3 rounded-lg w-fit">
                   {slide.button}
                 </button>
               </div>
