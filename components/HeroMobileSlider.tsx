@@ -46,7 +46,7 @@ export default function MobileHeroSlider() {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="relative min-w-full h-[240px]"
+              className="relative min-w-full h-60"
             >
               <Image
                 src={slide.image}

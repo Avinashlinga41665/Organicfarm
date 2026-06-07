@@ -1,10 +1,40 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 import { Search } from "lucide-react";
 import MobileHeroSlider from "./HeroMobileSlider";
 import { useRouter } from "next/navigation";
+import { productCategories } from "@/data/products";
 
 export default function Hero() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState<any[]>([]);
+  const handleSearch = (value: string) => {
+  setSearchTerm(value);
+
+  if (!value.trim()) {
+    setSearchResults([]);
+    return;
+  }
+
+  const term = value.toLowerCase();
+
+  const matches = productCategories.flatMap((category) =>
+    category.products
+      .filter(
+        (product) =>
+          product.name.toLowerCase().includes(term) ||
+          category.title.toLowerCase().includes(term)
+      )
+      .map((product) => ({
+        name: product.name,
+        category: category.title,
+        href: category.href,
+      }))
+  );
+
+  setSearchResults(matches);
+};
   const router = useRouter();
   return (
     <section id="hero" className="scroll-mt-20">
@@ -133,20 +163,58 @@ export default function Hero() {
 
       {/* ================= MOBILE HERO ================= */}
       <div className="md:hidden bg-gray-50">
+     <div className="px-4 pt-4">
+       <div className="relative">
 
-        {/* Search Bar */}
-        <div className="px-4 pt-4">
-          <div className="bg-white rounded-xl border flex items-center px-4 py-3 shadow-sm">
-            <Search size={20} className="text-gray-500" />
+    <div className="bg-white rounded-xl border flex items-center px-4 py-3 shadow-sm">
+      <Search
+        size={20}
+        className="text-gray-500"
+      />
 
-            <input
-              type="text"
-              placeholder="Search products..."
-              className="ml-3 flex-1 outline-none text-gray-700"
-            />
+      <input
+        type="text"
+        placeholder="Search products..."
+        value={searchTerm}
+        onChange={(e) => handleSearch(e.target.value)}
+        className="ml-3 flex-1 outline-none text-gray-700"
+      />
+    </div>
+
+    {searchTerm && (
+      <div className="absolute left-0 right-0 top-full mt-2 bg-linear-to-b from-white to-green-50 border border-green-200 rounded-2xl shadow-xl z-50 overflow-hidden">
+
+        {searchResults.length > 0 ? (
+          searchResults.map((item, index) => (
+            <div
+              key={index}
+              onClick={() => {
+                setSearchTerm("");
+                setSearchResults([]);
+                router.push(item.href);
+              }}
+              className="px-4 py-3 hover:bg-green-50 cursor-pointer border-b last:border-b-0"
+            >
+              <div className="font-medium">
+                {item.name}
+              </div>
+
+              <div className="text-xs text-gray-500">
+                {item.category}
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="px-4 py-3 text-gray-500">
+            🔍 No products found
           </div>
-        </div>
+        )}
 
+      </div>
+    )}
+
+  </div>
+</div>
         {/* Main Banner */}
         <div className="p-4">
           <div className="relative h-55 rounded-2xl overflow-hidden">

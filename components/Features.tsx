@@ -72,7 +72,7 @@ export default function Features() {
                   rounded-2xl
                   p-4
                   shadow-sm
-                  flex-shrink-0
+                  shrink-0
                 "
               >
                 <item.icon
